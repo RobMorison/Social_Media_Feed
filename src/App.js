@@ -7,7 +7,7 @@ function App() {
   const [postList, setPostList] = useState([])
 
   function addNewEntry(entry){
-    let tempEntries =[entry];
+    let tempEntries =[entry, ...postList];
     setPostList(tempEntries);
   }
 
@@ -15,8 +15,8 @@ function App() {
 
   return (
     <div>
-      <Post />
-      <PostList />
+      <Post addNewEntryProperty={addNewEntry}/>
+      <PostList  parentEntries = {postList}/>
     </div>
   );
 }
