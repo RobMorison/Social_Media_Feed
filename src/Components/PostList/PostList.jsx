@@ -1,23 +1,19 @@
 import React, { useState } from 'react';
-
+import Post from '../Post/post'
 const PostList = (props) => {
     return ( 
         <table className='table'>
         <thead>
             <tr>
-                <th>Date</th>
                 <th>Name</th>
                 <th>Post</th>
             </tr>
         </thead>
         <tbody>
-            {props.parentEntries.map((entry, date) =>{
+            {props.parentEntries.map((entry) =>{
                 return(
-                    <tr key= {date}>
-                    <td>{date}</td>
-                    <td>{entry.name}</td>
-                    <td>{entry.post}</td>
-                    </tr>
+                    <Post post = {entry}></Post>
+                   
                 );
             })}
         </tbody>            

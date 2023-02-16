@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import CreatePostForm from './Components/CreatePostForm/CreatePostForm';
 import PostList from './Components/PostList/PostList';
+import Post from './Components/Post/post';
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
     <div>
       <CreatePostForm addNewEntryProperty={addNewEntry}/>
       <PostList  parentEntries = {postList}/>
+      
     </div>
   );
 }
