@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import CreatePostForm from './Components/CreatePostForm/CreatePostForm';
 import PostList from './Components/PostList/PostList';
 import Post from './Components/Post/post';
+import NavBar from './Components/NavBar/NavBar';
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
 
   return (
     <div>
+      <NavBar/>
       <CreatePostForm addNewEntryProperty={addNewEntry}/>
       <PostList  parentEntries = {postList}/>
       
