@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import './LikeButton.css';
+import './DislikeButton.css';
 
 
 
-const LikeButton = (props) => {
+const DislikeButton = (props) => {
 
     const [buttonClass, setButtonClass] = useState('inactive');
 
@@ -18,9 +18,9 @@ const LikeButton = (props) => {
     }
     return (
         <div>
-            <button className={buttonClass} onClick={handleClick}>Thumbs Up</button>
+            <button className={buttonClass} onClick={handleClick}>Thumbs Down</button>
         </div>
       );
 }
  
-export default LikeButton;
+export default DislikeButton;

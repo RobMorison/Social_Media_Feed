@@ -1,0 +1,17 @@
+button {
+    color: white;
+    text-align: right;
+}
+
+button:hover{
+    box-shadow: 0 12px 16px 0;
+    }
+
+.active{
+    background-color: red;
+    color: black;
+}
+
+.inactive{
+    background-color: white;
+}
