@@ -17,10 +17,12 @@ function App() {
 
   return (
     <div>
+
       <NavBar/>
-      <CreatePostForm addNewEntryProperty={addNewEntry}/>
-      <PostList  parentEntries = {postList}/>
-      
+      <div className='col-md-6'>
+        <CreatePostForm addNewEntryProperty={addNewEntry}/>
+        <PostList  parentEntries = {postList}/>
+      </div>
     </div>
   );
 }
