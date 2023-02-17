@@ -2,12 +2,14 @@ import CreatePostForm from "../CreatePostForm/CreatePostForm";
 import React, { useState } from 'react';
 
 
+
 const Post = (props) => {
     return (
-        <tr>
+        <><tr>
             <td>{props.post.name}</td>
-            <td>{props.post.post}</td>
-        </tr>
+        </tr><tr>
+                <td>{props.post.post}</td>
+            </tr></>
     );
 }
 

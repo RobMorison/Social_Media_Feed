@@ -1,18 +1,17 @@
 import React, { useState } from 'react';
-import Post from '../Post/post'
+import Post from '../Post/post';
+import LikeButton from '../CustomButton/LikeButton';
+
 const PostList = (props) => {
     return ( 
         <table className='table'>
         <thead>
-            <tr>
-                <th>Name</th>
-                <th>Post</th>
-            </tr>
         </thead>
         <tbody>
             {props.parentEntries.map((entry) =>{
                 return(
-                    <Post post = {entry}></Post>
+                    <><Post post={entry}></Post><LikeButton></LikeButton></>
+
                    
                 );
             })}
