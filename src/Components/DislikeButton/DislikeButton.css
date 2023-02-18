@@ -8,10 +8,9 @@ button:hover{
     }
 
 .active{
-    background-color: red;
-    color: black;
+    color: red;
 }
 
 .inactive{
-    background-color: white;
+    background-color: black;
 }

@@ -24,7 +24,7 @@ const CreatePostForm = (props) => {
             <div>
                 <label>Post</label>
                 <input type='text' value={post} onChange={(event) => setPost(event.target.value)}/>
-                <button type='submit' className='btn btn-primary' style={{'margin-top': '1em'}}>Create</button>
+                <button type='submit' className='btn btn-primary btn-sm'>Create</button>
             </div>
         </form>
       );

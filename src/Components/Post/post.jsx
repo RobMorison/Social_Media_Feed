@@ -1,4 +1,3 @@
-import CreatePostForm from "../CreatePostForm/CreatePostForm";
 import React, { useState } from 'react';
 
 
