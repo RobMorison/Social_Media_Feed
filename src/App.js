@@ -17,11 +17,21 @@ function App() {
   return (
     <div>
       <div className='container-fluid'>
-        <NavBar/>
-        <div className='container'>
-          <div className='col-sm'>
-            <CreatePostForm addNewEntryProperty={addNewEntry}/>
-            <PostList  parentEntries = {postList}/>
+        <div className="p-3 mb-2 bg-info text-white">
+          <NavBar/>
+          <div className='container'>
+            <div className='col'>
+              <div className='border-box'>
+                <div class="p-3 mb-2 bg-white text-dark">
+                <CreatePostForm addNewEntryProperty={addNewEntry}/>
+                </div>
+              </div>
+              <div className='border-box'>
+              <div class="p-3 mb-2 bg-white text-dark">
+                <PostList  parentEntries = {postList}/>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

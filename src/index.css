@@ -1,4 +1,10 @@
-/* button{
+
+.button_container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+button{
     margin: 1rem;
     padding: 1rem;
     border-radius: 0;
@@ -17,4 +23,15 @@ button:hover{
 .inactive{
     color:black;
     background-color: white;
-} */
+}
+
+.on{
+    color: white;
+    background-color: red;
+
+}
+
+.off{
+    color:black;
+    background-color: white;
+}

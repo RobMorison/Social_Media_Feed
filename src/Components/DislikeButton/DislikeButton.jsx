@@ -5,20 +5,24 @@ import './DislikeButton.css';
 
 const DislikeButton = (props) => {
 
-    const [buttonClass, setButtonClass] = useState('inactive');
+    const [buttonClass, setButtonClass] = useState('off');
 
     function handleClick(){
-        if(buttonClass === 'inactive'){
-            setButtonClass('active');
+        if(buttonClass === 'off'){
+            setButtonClass('on');
         }
         else{
-            setButtonClass('inactive');
+            setButtonClass('off');
         }
 
     }
     return (
         <div>
-            <button className={buttonClass} onClick={handleClick}>Thumbs Down</button>
+            <div className='row'>
+                <div className='col-md-6'>
+            <button className={buttonClass} onClick={handleClick}>👎Thumbs Down</button>
+                </div>
+            </div>
         </div>
       );
 }

@@ -18,7 +18,11 @@ const LikeButton = (props) => {
     }
     return (
         <div>
-            <button className={buttonClass} onClick={handleClick}>Thumbs Up</button>
+            <div className='row'>
+                <div className='col-md-6'>
+            <button className={buttonClass} onClick={handleClick}>👍Thumbs Up</button>
+                </div>
+            </div>
         </div>
       );
 }
