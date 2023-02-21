@@ -21,7 +21,7 @@ function App() {
           <NavBar/>
           <div className='container'>
             <div className='col'>
-              <div className='border-box'>
+              <div className='flex-box'>
                 <div class="p-3 mb-2 bg-white text-dark">
                 <CreatePostForm addNewEntryProperty={addNewEntry}/>
                 </div>
